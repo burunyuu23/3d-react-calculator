@@ -1,0 +1,65 @@
+name: 3DCalcFlow
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '**'
+      - '!README.md'
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: install dependencies
+        run: npm i
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - run: npm i
+      - name: run tests
+        run: npm run test
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [setup, test]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - run: npm i
+      - name: build app
+        run: npm run build
+        env:
+          PUBLIC_URL: /
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v1
