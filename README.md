@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+[Фотографии проекта](#photos)
+
+![image](https://github.com/burunyuu23/3d-react-calculator/assets/34377854/a9f54b67-1b3f-41cc-813c-b57fdc02647c)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -44,3 +49,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+<a id="photos"> </a>
+
+![image](https://github.com/burunyuu23/3d-react-calculator/assets/34377854/6f973994-2a7e-4565-8f23-d05d63722897)
+
+![image](https://github.com/burunyuu23/3d-react-calculator/assets/34377854/8a66d9a5-2175-4d86-98a1-4fc856742a17)
+
+
+
