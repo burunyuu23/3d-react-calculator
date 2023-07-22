@@ -1,0 +1,138 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.6.27",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Cube",
+      "scale": [
+        0.5743215680122375,
+        1,
+        0.7537484169006348
+      ],
+      "translation": [
+        -2.007512092590332,
+        0.9553846120834351,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 180,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 104,
+      "max": [
+        7.513960399916536,
+        -0.3424263369122772,
+        7.513960399916536
+      ],
+      "min": [
+        -7.513960399916536,
+        -1.2298730996159384,
+        -7.513960399916536
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 104,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 104,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 481
+    }
+  ],
+  "buffers": [
+    {
+      "name": "model",
+      "byteLength": 488,
+      "uri": "data:application/octet-stream;base64,RFJBQ08CAgEBAAAAIDwCOwMAD3/6VFtVVa2qUqVKPUopCgEBEGwNtEZWSCA7Jm75tXJhRsoLnLl0n39b3lb5aYAD/wAAAAEAAQEAAQAJAwAAAgEBCQMAAQMBAwkCAAICAQEBAQWXBJ0qD6wDrC+sB6wPrAOsG6wDrCOsA6wDrAtVAQusG1UBA6wjrCNVATesX6xfVQGsrP/TrP//C/0B/+9VASD9gi6goW6dR9xBSgdjFMVCJ+HtWisirs33pwjLFPF+gAAAAAD/BwAASDbwwCd8nL9INvDASDZwQQsGAwEBBf8BiSWdCMUCA1BQUFA9AZwDnP///6NQUOxQnFDsA+zFBj094JP/AdzpdMupflfss+17hc4RzP1gIUjLCJVp/yxz3Fdizpe8xxBtLNqdC5Mk8OUMThHc/0ua9tyuNgqB/wAAAH8AAAD/AkpICAUBAQALAyEFFQ4hBUkBsQdJAZECA+kR9QgUBU47H58WstXWDT/Y0VHpvOnGvYDsuU8BEOoHoL/Aav3rBwimn4CI6tP6nv8AkKH+A1H+B+AsHN8LDgSi/gOPAXAHAHaAJfiCSGV/HRnQ9xU8CkBoAJkEgIAIIIIwAAAAAQI2QwAAAAD/AwAAAAAAPgAAAAAAAIA/CgAAAAAAAAA="
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
