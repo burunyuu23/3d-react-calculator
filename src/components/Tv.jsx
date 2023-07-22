@@ -46,7 +46,7 @@ const Tv = (({basePosition}) => {
                             fontSize={35}
                             maxWidth={300}
                             color={"rgba(135,144,60,0.47)"}>
-                            {expression + specialSymbol + (result === "" ? ("") : (`= ${result}`))}
+                            {expression + specialSymbol + (result === "" ? ("") : (` = ${result}`))}
                         </Text>
                     </group>
 

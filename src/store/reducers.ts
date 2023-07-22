@@ -51,19 +51,9 @@ const calcReducer = (state = initialState,
                 result: ''
             }
         case REMOVE_LAST_SIGN:
-            const lastChar = state.expression.charAt(state.expression.length - 1);
-            if ('+-*/'
-                .split('')
-                .includes(lastChar)) {
-                return {
-                    ...state,
-                    expression: state.expression.slice(0, -2),
-                    result: ''
-                }
-            }
             return {
                 ...state,
-                expression: state.expression.slice(0, -1),
+                expression: '',
                 result: ''
             }
         case EVALUATE:
