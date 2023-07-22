@@ -82,6 +82,7 @@ const calcReducer = (state = initialState,
                     .includes(lastChar))
                     return {
                         ...state,
+                        // eslint-disable-next-line no-eval
                         result: '' + eval(state.expression)
                     }
             }
