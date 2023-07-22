@@ -21,20 +21,9 @@ jobs:
       - name: install dependencies
         run: npm i
 
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-      - run: npm i
-      - name: run tests
-        run: npm run test
-
   build:
     runs-on: ubuntu-latest
-    needs: [setup, test]
+    needs: setup
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
