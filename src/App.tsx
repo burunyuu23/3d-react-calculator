@@ -5,7 +5,7 @@ import AppRouter from "./AppRouter";
 
 function App() {
     return (
-        <BrowserRouter basename={"/"}>
+        <BrowserRouter basename={"/3d-react-calculator/"}>
             <div className="app">
                 <AppRouter/>
             </div>
