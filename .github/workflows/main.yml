@@ -20,7 +20,7 @@ jobs:
       - name: build app
         run: npm run build
         env:
-          PUBLIC_URL: /3d-react-calculator/
+          PUBLIC_URL: /
       - name: upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
