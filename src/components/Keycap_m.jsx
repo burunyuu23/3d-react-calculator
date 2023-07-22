@@ -8,7 +8,7 @@ import BaseKeycap from "./BaseKeycap";
 
 
 export default function Keycap({basePosition, scaleAmp, text, func, ...props}) {
-    const {nodes, materials} = useGLTF('/keycap/keycap_m.gltf')
+    const {nodes, materials} = useGLTF(`${process.env.PUBLIC_URL}/keycap/keycap_m.gltf`)
 
     return (
         <BaseKeycap basePosition={basePosition}
@@ -23,4 +23,4 @@ export default function Keycap({basePosition, scaleAmp, text, func, ...props}) {
     )
 }
 
-useGLTF.preload('/keycap/keycap_m.gltf')
+useGLTF.preload(`${process.env.PUBLIC_URL}/keycap/keycap_m.gltf`)

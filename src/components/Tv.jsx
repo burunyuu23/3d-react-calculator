@@ -31,7 +31,7 @@ const Tv = (({basePosition}) => {
         }
     }, [specialSymbol])
 
-    const {nodes, materials} = useGLTF('/tv/tv.gltf')
+    const {nodes, materials} = useGLTF(`${process.env.PUBLIC_URL}/tv/tv.gltf`)
 
     return (
         <group
@@ -66,6 +66,6 @@ const Tv = (({basePosition}) => {
     )
 });
 
-useGLTF.preload('/tv/tv.gltf')
+useGLTF.preload(`${process.env.PUBLIC_URL}/tv/tv.gltf`)
 
 export default Tv;

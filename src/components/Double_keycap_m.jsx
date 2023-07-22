@@ -9,7 +9,7 @@ import BaseKeycap from "./BaseKeycap";
 
 
 export default function DoubleKeycap({basePosition, scaleAmp, text, ...props}) {
-    const {nodes, materials} = useGLTF('/double_keycap/double_keycap_m.gltf')
+    const {nodes, materials} = useGLTF(`${process.env.PUBLIC_URL}/double_keycap/double_keycap_m.gltf`)
 
     return (
         <BaseKeycap basePosition={basePosition}
@@ -22,4 +22,4 @@ export default function DoubleKeycap({basePosition, scaleAmp, text, ...props}) {
     )
 }
 
-useGLTF.preload('/double_keycap/double_keycap_m.gltf')
+useGLTF.preload(`${process.env.PUBLIC_URL}/double_keycap/double_keycap_m.gltf`)

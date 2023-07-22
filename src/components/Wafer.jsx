@@ -3,7 +3,7 @@ import BaseKeycap from "./BaseKeycap";
 import {useGLTF} from "@react-three/drei";
 
 const Wafer = ({basePosition, scaleAmp, ...props}) => {
-    const {nodes, materials} = useGLTF('/wafer/wafer_m.gltf')
+    const {nodes, materials} = useGLTF(`${process.env.PUBLIC_URL}/wafer/wafer_m.gltf`)
     return (
         <BaseKeycap basePosition={basePosition}
                     func={() => {}}
@@ -16,5 +16,5 @@ const Wafer = ({basePosition, scaleAmp, ...props}) => {
     );
 };
 
-useGLTF.preload('/wafer/wafer_m.gltf')
+useGLTF.preload(`${process.env.PUBLIC_URL}/wafer/wafer_m.gltf`)
 export default Wafer;

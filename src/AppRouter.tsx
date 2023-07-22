@@ -6,7 +6,7 @@ import ThreeScene from "./views/ThreeScene";
 const AppRouter = () => {
     return (
         <Routes>
-            <Route path="/"
+            <Route path="3d-react-calculator/"
                    element={<CalcScene />} />
             <Route path="/test"
                    element={<ThreeScene />} />
