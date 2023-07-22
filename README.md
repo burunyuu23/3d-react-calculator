@@ -2,6 +2,8 @@
 
 [Фотографии проекта](#photos)
 
+<a href="https://burunyuu23.github.io/3d-react-calculator/">ДАЙТЕ МНЕ УЖЕ ПУЛЬТ ОТ ТЕЛИКА. ТЕЛИК</a>
+
 ![image](https://github.com/burunyuu23/3d-react-calculator/assets/34377854/a9f54b67-1b3f-41cc-813c-b57fdc02647c)
 
 
