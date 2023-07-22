@@ -77,7 +77,6 @@ const calcReducer = (state = initialState,
             }
             if (state.expression !== '') {
                 const lastChar = state.expression.charAt(state.expression.length - 1);
-                console.log(lastChar)
                 if (!'+-*/. '
                     .split('')
                     .includes(lastChar))

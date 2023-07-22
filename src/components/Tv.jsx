@@ -17,8 +17,6 @@ const Tv = (({basePosition}) => {
     // TODO: вынести логику из телевизера, потому что three.js ререндерит объект при анимации, либо я просто тупой
     const expression = useSelector((state) => state.expression);
     const result = useSelector((state) => state.result);
-    console.log(expression)
-    console.log(result)
 
     const [specialSymbol, setSpecialSymbol] = useState('_');
     useEffect(() => {

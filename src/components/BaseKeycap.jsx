@@ -25,7 +25,6 @@ export default function BaseKeycap({basePosition, scaleAmp, text, func, children
         if (isClickable) {
             if (clicked === true) {
                 func(text);
-                console.log('clicked!')
             }
         }
     }, [isClickable,func, text,clicked])
