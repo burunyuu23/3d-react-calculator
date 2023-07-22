@@ -14,9 +14,13 @@ const calcReducer = (state = initialState,
                      action: CalcActionTypes) => {
     switch (action.type) {
         case ADD_SIGN:
+            const lastChar = state.expression.charAt(state.expression.length - 1);
+            if (lastChar === '0' && !'+-*/.'
+                .split('')
+                .includes(action.payload))
+                return {...state}
             if (action.payload === ".") {
                 const allSigns = state.expression.split(' ');
-                const lastChar = state.expression.charAt(state.expression.length - 1);
                 const lastLastChar = state.expression.charAt(state.expression.length - 2);
                 if (allSigns[allSigns.length - 1].includes('.') ||
                     state.expression === "" ||
